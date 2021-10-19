@@ -11,6 +11,10 @@ class Turnstile # the Finite State Machine
     @current_state = current_state
   end
 
+  def current_state
+    @current_state
+  end
+
   def display_current_state
     puts
     puts "Turnstile is currently #{@current_state}"

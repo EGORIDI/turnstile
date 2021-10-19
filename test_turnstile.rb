@@ -3,7 +3,7 @@ require "minitest/autorun"
 
 class TestTurnstile < Minitest::Test 
   def setup
-    @turnstile = turnstile.new
+    @turnstile = Turnstile.new(["unlocked", "locked"].sample)
   end
 
   def test_unlocked
